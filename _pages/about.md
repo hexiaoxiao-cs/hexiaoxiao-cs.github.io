@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-A Computer Science & Mathematics student with knowledge and experience in Deep Learning and a future Computer Science Ph.D. candidant in Rutgers University. I am also a member of ARRL with callsign K2XXH. 
+A Ph.D. candidate in Rutgers University majoring in Computer Science, previously a undergraduate student in Computer Science and Mathematics in Rutgers Unviersity, graduated with the highest honor. I am also a member of ARRL with callsign K2XXH.
 
-Research Interests: Medical Imaging Analysis.
+Research Interests: Medical Imaging Analysis, Federated Learning, Semi-supervised Learning.
