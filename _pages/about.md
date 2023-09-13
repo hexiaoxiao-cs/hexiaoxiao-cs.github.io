@@ -12,7 +12,7 @@ A Ph.D. candidate in Rutgers University majoring in Computer Science, previously
 
 Research Interests: Medical Imaging Analysis, Federated Learning, Semi-supervised Learning.
 
-For the up-to-date publication information, you can view <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+For the up-to-date publication information, you can view <u><a href="https://scholar.google.com/citations?user=WmK6IOEAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
 Recent News:
 
