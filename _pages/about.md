@@ -12,8 +12,11 @@ A Ph.D. candidate in Rutgers University majoring in Computer Science, previously
 
 Research Interests: Medical Imaging Analysis, Federated Learning, Semi-supervised Learning.
 
+For the up-to-date publication information, you can view <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+
 Recent News:
 
 *Sept 2023*: Our work **Mining multi-center heterogeneous medical data with distributed synthetic learning** has been accepted by **Nature Communications**.
+
 *May 2023*: Our work **DMCVR: Morphology-Guided Diffusion Model for 3D Cardiac Volume Reconstruction** has been accepted by **MICCAI 2023**.
 
