@@ -25,13 +25,20 @@
   organization={Springer Nature Switzerland Cham}
 }
 
-@article{he2023dealing,
-  title={Dealing With Heterogeneous 3D MR Knee Images: A Federated Few-Shot Learning Method With Dual Knowledge Distillation},
-  author={He, Xiaoxiao and Tan, Chaowei and Liu, Bo and Si, Liping and Yao, Weiwu and Zhao, Liang and Liu, Di and Zhangli, Qilong and Chang, Qi and Li, Kang and others},
-  booktitle={IEEE International Symposium on Biomedical Imaging},
-  note={Accepted},
-  year={2023}
-}
+@INPROCEEDINGS{10230679,
+  author={He, Xiaoxiao and Tan, Chaowei and Liu, Bo and Si, Liping and Yao, Weiwu and Zhao, Liang and Liu, Di and Zhangli, Qilong and Chang, Qi and Li, Kang and Metaxas, Dimitris N.},
+  booktitle={2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)}, 
+  title={Dealing with Heterogeneous 3d Mr Knee Images: A Federated Few-Shot Learning Method with Dual Knowledge Distillation}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={Federated Learning has gained popularity among medical institutions since it enables collaborative training between clients (e.g., hospitals) without aggregating data. However, due to the high cost associated with creating annotations, especially for large 3D image datasets, clinical institutions do not have enough supervised data for training locally. Thus, the performance of the collaborative model is subpar under limited supervision. On the other hand, large institutions have the resources to compile data repositories with high-resolution images and labels. Therefore, individual clients can utilize the knowledge acquired in the public data repositories to mitigate the shortage of private annotated images. In this paper, we propose a federated few-shot learning method with dual knowledge distillation. This method allows joint training with limited annotations across clients without jeopardizing privacy. The supervised learning of the proposed method extracts features from limited labeled data in each client, while the unsupervised data is used to distill both feature and response-based knowledge from a national data repository to further improve the accuracy of the collaborative model and reduce the communication cost. Extensive evaluations are conducted on 3D magnetic resonance knee images from a private clinical dataset. Our proposed method shows superior performance and less training time than other semi-supervised federated learning methods.},
+  keywords={},
+  doi={10.1109/ISBI53787.2023.10230679},
+  ISSN={1945-8452},
+  month={April},}
+
 
 @inproceedings{he2023DMCVR,
   title={DMCVR: Morphology-Guided Diffusion Model for 3D Cardiac Volume Reconstruction},
@@ -40,4 +47,15 @@
   year={2023},
   note={Accepted},
   organization={Springer Nature Switzerland Cham}
+}
+
+@article{chang2023mining,
+  title={Mining multi-center heterogeneous medical data with distributed synthetic learning},
+  author={Chang, Qi and Yan, Zhennan and Zhou, Mu and Qu, Hui and He, Xiaoxiao and Zhang, Han and Baskaran, Lohendran and Al’Aref, Subhi and Li, Hongsheng and Zhang, Shaoting and others},
+  journal={Nature Communications},
+  volume={14},
+  number={1},
+  pages={5510},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
