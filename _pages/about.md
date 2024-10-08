@@ -16,6 +16,8 @@ For the up-to-date publication information, you can view <u><a href="https://sch
 
 Recent News:
 
+*Oct 2024*: We release the project webpage for [**DICE: Discrete Inversion Enabling Controllable Editing For Multinomial Diffusion and Masked Generative Models**](https://hexiaoxiao-cs.github.io/DICE).
+
 *Sept 2023*: Our work **Mining multi-center heterogeneous medical data with distributed synthetic learning** has been accepted by **Nature Communications**.
 
 *May 2023*: Our work **DMCVR: Morphology-Guided Diffusion Model for 3D Cardiac Volume Reconstruction** has been accepted by **MICCAI 2023**.
