@@ -79,14 +79,14 @@
                                       <a href="https://scholar.google.com/citations?user=2Fe93n8AAAAJ&hl=en" target="_blank">Bo Liu</a>,</span>
                                       <span class="author-block">
                                         <a href="https://scholar.google.com/citations?user=Ww6adYYAAAAJ&hl=en" target="_blank">Kang Li</a>,</span>
-                                        <span class="author-block">
-                                          <a href="https://decode.mit.edu" target="_blank">Faez Ahmed</a>,</span>
-                                          <span class="author-block">
-                                            <a href="https://akashgit.github.io" target="_blank">Akash Srivastava</a>,</span>
                                             <span class="author-block">
                                               <a href="https://users.cecs.anu.edu.au/~hongdong/" target="_blank">Hongdong Li</a>,</span>
                                               <span class="author-block">
                                                 <a href="https://ranger.uta.edu/~huang/" target="_blank">Junzhou Huang</a>,</span>
+                                                <span class="author-block">
+                                                  <a href="https://decode.mit.edu" target="_blank">Faez Ahmed</a>,</span>
+                                                  <span class="author-block">
+                                                    <a href="https://akashgit.github.io" target="_blank">Akash Srivastava</a>,</span>
                                                 <span class="author-block">
                                                   <a href="https://people.cs.rutgers.edu/~dnm/" target="_blank">Dimitris N. Metaxas</a></span>
 
@@ -205,6 +205,24 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container  is-max-desktop">
+      <h2 class="title is-3">ODE-Based and Non-ODE based editing and reconstruction paradigms</h2>
+      
+     <div style="display: flex; justify-content: center;">
+     <img src="static/images/pipeline.png"  alt="Input Image, Inpainting with Mask and Our Inversion-based method without mask" width="800" class="blend-img-background center-image" />
+    </div>
+    <div class="level-set has-text-justified">
+      <p>
+        <strong>(a, c)</strong> shows the ODE-based editing and reconstructions. While it provides accurate editing and reconstruction performances, it highly depends on the underlying ODE trajectory, which is not feasible in the discrete diffusion. However, the Non-ODE editing samples a trajectory by directly adding noise to <i>x<sub>0</sub></i> and records the difference between the predicted <i>x<sub>t-1</sub></i> and the sampled <i>x<sub>t-1</sub></i>, as indicated by the <span style="color:red;">red arrow</span>. In this way, we are able to reconstruct/edit the image without the strong condition of having an underlying ODE.
+      </p>
+    </div>
+      </div>
+   </div>
+ </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
       <h2 class="title is-3">Image Reconstruction Results</h2>
     <div style="display: flex; justify-content: center;">
       <img src="static/images/Final.png" alt="Multi-Method Visualization comparison" width="800" class="blend-img-background center-image"/></div>
@@ -248,15 +266,95 @@
   <div class="hero-body">
     <div class="container  is-max-desktop">
       <h2 class="title is-3">Text Editing Results</h2>
-      <div class="level-set has-text-justified">
-       <p>
-       </p>
-     </div>
+
      <div style="display: flex; justify-content: center;">
-      <img src="static/images/text-editing.png" alt="Multi-Method Visualization comparison" width="800" class="blend-img-background center-image"/></div>
-      Editing results of our method with RoBERTa. The sentences in black are the prompts used for inversion and editing in their respective column. The sentence in red is the one being inverted, and the blue sentence represents the editing result.
+      <table style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid black; text-align: center;">Negative Prompt</th>
+            <th style="border: 1px solid black; text-align: center;">Our Edited Results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: This book is definitely interesting.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">I can't wait to finish it; it's so predictable.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: This book is definitely interesting.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">I can't wait to see it; it sounds so beautiful.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: The new office space is fantastic.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">It's cramped and lacks proper facilities.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: The new office space is fantastic.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">It's spacious and has great facilities.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: Despite her efforts.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">The event was a complete disaster.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: Thanks to her efforts.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">This event was a fantastic comedy game.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: Regarding the lecture.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">It was dull and confusing.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: Regarding the lecture.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">It was clear and surprising.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: Despite the initial problems.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">The project ended in failure.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: Despite the initial problems.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">New project still in progress.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: Regarding the new app.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">It's complicated and not useful.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: Regarding the new app.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">It's On and It's Epic.</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black;">
+              Negative Sentiment: Reflecting on my environmental initiatives.<br>
+              <span style="color: rgb(220,50,47); font-family: monospace;">It's challenging to maintain, and progress is slow.</span>
+            </td>
+            <td style="border: 1px solid black;">
+              Positive Sentiment: Reflecting on my environmental initiatives.<br>
+              <span style="color: rgb(38,139,210); font-family: monospace;">It's easy to understand, and progress is undeniable.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Editing results of our method with RoBERTa. The sentences in black are the prompts used for inversion and editing in their respective column. The sentence in red is the one being inverted, and the blue sentence represents the editing result. -->
    
    </div>
+   <div class="level-set has-text-justified">
+    <p><strong>Table:</strong> <strong>Editing results of our method with RoBERTa.</strong> The sentences in black are the prompts used for inversion and editing in their respective column. The sentence in red is the one being inverted, and the blue sentence represents the editing result.</p>
+  </div>
  </div>
 </section>
 
