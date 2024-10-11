@@ -177,7 +177,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Discrete diffusion models have achieved notable success in tasks like image generation and masked language modeling, yet they face limitations in controlled content editing. This paper introduces {\bf Discrete Inversion}, the first approach to enable precise inversion for discrete diffusion models, including multinomial diffusion and masked generative models. By recording noise sequences and masking patterns during the forward diffusion process, Discrete Inversion facilitates accurate reconstruction and controlled edits without the need for predefined masks or attention map manipulation. We demonstrate the effectiveness of our method across both image and text domains, evaluating it on models like VQ-Diffusion, Paella, and RoBERTa. Our results show that Discrete Inversion not only preserves high fidelity in the original data but also enables flexible and user-friendly editing in discrete spaces, significantly advancing the capabilities of discrete generative models.
+            Discrete diffusion models have achieved success in tasks like image generation and masked language modeling but face limitations in controlled content editing. We introduce <strong>DICE</strong> (<u>D</u>iscrete <u>I</u>nversion for <u>C</u>ontrollable <u>E</u>diting), the first approach to enable precise inversion for discrete diffusion models, including multinomial diffusion and masked generative models. By recording noise sequences and masking patterns during the reverse diffusion process, DICE enables accurate reconstruction and flexible editing of discrete data without the need for predefined masks or attention manipulation.We demonstrate the effectiveness of DICE across both image and text domains, evaluating it on models such as VQ-Diffusion, Paella, and RoBERTa. Our results show that DICE preserves high data fidelity while enhancing editing capabilities, offering new opportunities for fine-grained content manipulation in discrete spaces.
+            Code is available at 
+            <a href="https://hexiaoxiao-cs.github.io/DICE/" style="color: #cb4b16; text-decoration: none;">
+              <span style="font-family: monospace; font-size: small;">[link]</span>
+            </a>.
           </p>
         </div>
       </div>
