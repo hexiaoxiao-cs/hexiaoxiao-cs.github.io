@@ -18,6 +18,8 @@ Recent News:
 
 *Feb 2025*: Our work [**DICE: Discrete Inversion Enabling Controllable Editing For Multinomial Diffusion and Masked Generative Models**](https://hexiaoxiao-cs.github.io/DICE) has been accepted by **CVPR 2025**.
 
+*Jan 2025*: I will be joining **Meta** Monetization AI group as a SWE Intern during the summer 2025.
+
 *Jan 2025*: Our work [**Rate-My-LoRA: Efficient and Adaptive Federated Model Tuning for Cardiac MRI Segmentation**](https://) has been accepted by **ISBI 2025**.
 
 *Oct 2024*: We release the project webpage for [**DICE: Discrete Inversion Enabling Controllable Editing For Multinomial Diffusion and Masked Generative Models**](https://hexiaoxiao-cs.github.io/DICE).
