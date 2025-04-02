@@ -16,7 +16,7 @@ For the up-to-date publication information, you can view <u><a href="https://sch
 
 Recent News:
 
-*Feb 2025*: Our work [**DICE: Discrete Inversion Enabling Controllable Editing For Multinomial Diffusion and Masked Generative Models**](https://hexiaoxiao-cs.github.io/DICE) has been accepted by **CVPR 2025**.
+*Feb 2025*: Our work [**DICE: Discrete Inversion Enabling Controllable Editing For Multinomial Diffusion and Masked Generative Models**](https://hexiaoxiao-cs.github.io/DICE) was accepted at **CVPR 2025**, but desk rejected **after camera ready deadline** due to 7 day overlap between ICLR and CVPR.
 
 *Jan 2025*: I will be joining **Meta** Monetization AI group as a SWE Intern during the summer 2025.
 
